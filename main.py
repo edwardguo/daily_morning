@@ -24,7 +24,7 @@ if app_id is None or app_secret is None:
   print('请设置 APP_ID 和 APP_SECRET')
   exit(422)
 
-if user_ids is None:
+if user_id is None:
   print('请设置 USER_ID')
   exit(422)
 
