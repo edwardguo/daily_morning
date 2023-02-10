@@ -38,7 +38,7 @@ def get_weather():
   if city is None:
     print('请设置城市')
     return None
-  url = "http://api.tianapi.com/tianqi/index?key="+ tq_key +"&city=" + city +"市"
+  url = "http://api.tianapi.com/tianqi/index?type=1&key="+ tq_key +"&city=" + city +"市"
   res = requests.get(url).json()
   weather = res['newslist'][0]
   return weather
