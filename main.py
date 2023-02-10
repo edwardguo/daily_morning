@@ -123,27 +123,27 @@ data = {
     "color": get_random_color()
   },
   "wind": {
-    "value": weather['wind'],
+    "value": weather['windsc'],
     "color": get_random_color()
   },
   "air_data": {
-    "value": weather['airData'],
+    "value": weather['aqi'],
     "color": get_random_color()
   },
   "air_quality": {
-    "value": weather['airQuality'],
+    "value": weather['quality'],
     "color": get_random_color()
   },
   "temperature": {
-    "value": math.floor(weather['temp']),
+    "value": math.floor(weather['real']),
     "color": get_random_color()
   },
   "highest": {
-    "value": math.floor(weather['high']),
+    "value": math.floor(weather['highest']),
     "color": get_random_color()
   },
   "lowest": {
-    "value": math.floor(weather['low']),
+    "value": math.floor(weather['lowest']),
     "color": get_random_color()
   },
   "love_days": {
