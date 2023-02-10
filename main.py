@@ -20,7 +20,7 @@ app_secret = os.environ['APP_SECRET']
 user_id = os.environ['USER_ID']
 template_id = os.environ['TEMPLATE_ID']
 
-tx_key = os.environ["TX_KEY"]
+tx_key = os.environ['TX_KEY']
 
 if app_id is None or app_secret is None:
   print('请设置 APP_ID 和 APP_SECRET')
