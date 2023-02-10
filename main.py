@@ -19,7 +19,6 @@ app_secret = os.environ['APP_SECRET']
 
 user_id = os.environ['USER_ID']
 template_id = os.environ['TEMPLATE_ID']
-
 tq_key = os.environ['TQ_KEY']
 
 if app_id is None or app_secret is None:
