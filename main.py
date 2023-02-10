@@ -20,6 +20,8 @@ app_secret = os.environ['APP_SECRET']
 user_id = os.environ['USER_ID']
 template_id = os.environ['TEMPLATE_ID']
 
+tx_key = os.environ["TX_KEY"]
+
 if app_id is None or app_secret is None:
   print('请设置 APP_ID 和 APP_SECRET')
   exit(422)
@@ -37,14 +39,9 @@ def get_weather():
   if city is None:
     print('请设置城市')
     return None
-  url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
-  # OpenRefactory Warning: The 'requests.get' method does not use any 'timeout' threshold which may cause program to hang indefinitely.
-  res = requests.get(url, timeout=100).json()
-  if res is None:
-    return None
-  if res['code'] != 0:
-    return None
-  weather = res['data']['list'][0]
+  url = "http://api.tianapi.com/tianqi/index?key="+ tx_key +"&city=" + city +"市"
+  res = requests.get(url).json()
+  weather = res['newslist'][0]
   return weather
 
 # 获取当前日期为星期几
