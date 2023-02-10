@@ -7,6 +7,9 @@ import os
 import random
 import re
 
+for k in os.environ.keys():
+	print(k)
+
 nowtime = datetime.utcnow() + timedelta(hours=8)  # 东八区时间
 today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d") #今天的日期
 
