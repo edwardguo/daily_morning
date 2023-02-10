@@ -134,15 +134,15 @@ data = {
     "color": get_random_color()
   },
   "temperature": {
-    "value": math.floor(weather['real']),
+    "value": weather['real'],
     "color": get_random_color()
   },
   "highest": {
-    "value": math.floor(weather['highest']),
+    "value": weather['highest'],
     "color": get_random_color()
   },
   "lowest": {
-    "value": math.floor(weather['lowest']),
+    "value": weather['lowest'],
     "color": get_random_color()
   },
   "love_days": {
