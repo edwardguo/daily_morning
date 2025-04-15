@@ -96,10 +96,10 @@ def split_birthday():
     return None
   return birthday.split('\n')
 
-weather = get_weather()
-if weather is None:
-  print('获取天气失败')
-  exit(422)
+# weather = get_weather()
+# if weather is None:
+#   print('获取天气失败')
+#   exit(422)
 data = {
   "city": {
     "value": city,
@@ -113,38 +113,38 @@ data = {
     "value": get_week_day(),
     "color": get_random_color()
   },
-  "weather": {
-    "value": weather['weather'],
-    "color": get_random_color()
-  },
-  "humidity": {
-    "value": weather['humidity'],
-    "color": get_random_color()
-  },
-  "wind": {
-    "value": weather['windsc'],
-    "color": get_random_color()
-  },
-  "air_data": {
-    "value": weather['aqi'],
-    "color": get_random_color()
-  },
-  "air_quality": {
-    "value": weather['quality'],
-    "color": get_random_color()
-  },
-  "temperature": {
-    "value": weather['real'],
-    "color": get_random_color()
-  },
-  "highest": {
-    "value": weather['highest'],
-    "color": get_random_color()
-  },
-  "lowest": {
-    "value": weather['lowest'],
-    "color": get_random_color()
-  },
+  # "weather": {
+  #   "value": weather['weather'],
+  #   "color": get_random_color()
+  # },
+  # "humidity": {
+  #   "value": weather['humidity'],
+  #   "color": get_random_color()
+  # },
+  # "wind": {
+  #   "value": weather['windsc'],
+  #   "color": get_random_color()
+  # },
+  # "air_data": {
+  #   "value": weather['aqi'],
+  #   "color": get_random_color()
+  # },
+  # "air_quality": {
+  #   "value": weather['quality'],
+  #   "color": get_random_color()
+  # },
+  # "temperature": {
+  #   "value": weather['real'],
+  #   "color": get_random_color()
+  # },
+  # "highest": {
+  #   "value": weather['highest'],
+  #   "color": get_random_color()
+  # },
+  # "lowest": {
+  #   "value": weather['lowest'],
+  #   "color": get_random_color()
+  # },
   "love_days": {
     "value": get_memorial_days_count(),
     "color": get_random_color()
