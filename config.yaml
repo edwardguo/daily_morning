@@ -7,6 +7,8 @@ CITY: "北京"
 
 BIRTHDAY:
   - "05-21"
+MARRYDAY: "01-01"
+MARRYWITNESSDAY: "01-01"
 
 APP_ID: "微信公众平台的 APP ID"
 APP_SECRET: "微信公众平台的 APP SECRET"
