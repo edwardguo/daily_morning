@@ -31,3 +31,5 @@ jobs:
       BIRTHDAY: ${{ secrets.BIRTHDAY }}
       CITY: ${{ secrets.CITY }}
       TQ_SECRET: ${{ secrets.TQ_SECRET }}
+      MARRYDAY: ${{ secrets.MARRYDAY }}
+      MARRYWITNESSDAY: ${{ secrets.MARRYWITNESSDAY }}
