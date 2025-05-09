@@ -13,6 +13,8 @@ today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d") #今天的日期
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
 birthday = os.environ['BIRTHDAY']
+marryday = os.environ['MARRYDAY']
+marrywitnessday = os.environ['MARRYWITNESSDAY']
 
 app_id = os.environ['APP_ID']
 app_secret = os.environ['APP_SECRET']
@@ -151,6 +153,14 @@ data = {
   },
   "words": {
     "value": get_words(),
+    "color": get_random_color()
+  },
+  "marry_left": {
+    "value": get_counter_left(marryday),
+    "color": get_random_color()
+  },
+  "marry_witness_left": {
+      "value": get_counter_left(marrywitnessday),
     "color": get_random_color()
   },
 }
